@@ -11,7 +11,7 @@ load_dotenv()
 # --- ЗАГРУЗКА НАСТРОЕК ---
 TOKEN = os.getenv('STUDENT_BOT_TOKEN')
 # Берем домен из переменных. Если запускаем локально, подставится 127.0.0.1
-BASE_URL = os.getenv('DJANGO_BASE_URL', 'http://127.0.0.1:8000')
+BASE_URL = os.getenv('DJANGO_API_URL', 'http://127.0.0.1:8000')
 
 SYNC_API_URL = f"{BASE_URL}/auth/api/sync-telegram/"
 SCHEDULE_API_URL = f"{BASE_URL}/auth/api/get-schedule/"
